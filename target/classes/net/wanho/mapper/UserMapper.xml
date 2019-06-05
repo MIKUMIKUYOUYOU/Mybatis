@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间指向对应的接口-->
+<mapper namespace="net.wanho.mapper.UserMapper">
+
+    <insert id="addUser">
+        INSERT INTO user(username,password,sex,position) VALUES(#{username},#{password},#{sex},#{position})
+    </insert>
+
+    <delete id="delUser">
+        DELETE FROM user WHERE id=#{id}
+    </delete>
+
+    <resultMap id="userMap" type="User">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="password" property="password"/>
+        <result column="position" property="position"/>
+        <result column="sex" property="sex"/>
+    </resultMap>
+    <select id="selectAll" resultMap="userMap">
+        SELECT * FROM user
+    </select>
+
+    <select id="selectUserById" resultType="User">
+        SELECT * FROM user WHERE id=#{id}
+    </select>
+
+    <!--    普通类型-->
+    <!--   字符串拼接 sql注入 SELECT * FROM user WHERE username LIKE "%${value}%"-->
+    <!--   需要传 （%数据%） SELECT * FROM user WHERE username LIKE #{name}-->
+    <!--   正常传数据 SELECT * FROM user WHERE username LIKE CONCAT("%",#{name},"%")-->
+    <select id="selectUserByName" resultType="User">
+        SELECT * FROM user WHERE username LIKE CONCAT("%",#{name},"%")
+    </select>
+
+    <!--    复杂类型-->
+    <!--  字符串拼接 sql注入  SELECT * FROM user WHERE username LIKE "%${username}%"-->
+    <!--  需要传 （%数据%）  SELECT * FROM user WHERE username LIKE #{username}-->
+    <!--  正常传数据  SELECT * FROM user WHERE username LIKE CONCAT("%",#{name},"%")-->
+    <select id="selectUserByName2" resultType="User">
+        SELECT * FROM user WHERE username LIKE CONCAT("%",#{username},"%")
+    </select>
+
+    <insert id="addUser2" useGeneratedKeys="true" keyProperty="id">
+         INSERT INTO user(username,password,sex,position) VALUES(#{username},#{password},#{sex},#{position})
+    </insert>
+
+    <update id="updateUser">
+        UPDATE user SET username=#{username} ,password=#{password} ,sex=#{sex} ,position=#{position} WHERE id=#{id}
+    </update>
+
+    <update id="updateUser2">
+        UPDATE user SET username=#{user.username},password=#{user.password},sex=#{user.sex},position=#{user.position} WHERE id=#{id}
+    </update>
+
+
+</mapper>
