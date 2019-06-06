@@ -2,16 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86698be1-992f-434f-b9e8-4523838b8859" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/wanho/Test/MybatisTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/wanho/mapper/PersonMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/wanho/pojo/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/wanho/pojo/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/wanho/pojo/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/net/wanho/mapper/PersonMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/wanho/Test/MybatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/wanho/Test/MybatisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/wanho/mapper/TestMybatis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/wanho/mapper/TestMybatis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/wanho/mapper/TestMybatis.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/wanho/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/wanho/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/net/wanho/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/net/wanho/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/net/wanho/Test/MybatisTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/wanho/Test/MybatisTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/wanho/mapper/TestMybatis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/wanho/mapper/TestMybatis.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/wanho/mapper/TestMybatis.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/net/wanho/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/wanho/mapper/UserMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/net/wanho/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/wanho/mapper/UserMapper.xml" afterDir="false" />
     </list>
@@ -28,11 +35,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/wanho/Test/MybatisTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="197" column="29" selection-start-line="197" selection-start-column="29" selection-end-line="197" selection-end-column="29" />
+            <state relative-caret-position="111">
+              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/wanho/util/MybatisUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,17 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="452">
+              <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -61,17 +68,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/net/wanho/mapper/UserMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="116" column="22" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="22" />
+            <state relative-caret-position="222">
+              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/wanho/util/MybatisUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/wanho/mapper/PersonMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+            <state relative-caret-position="214">
+              <caret line="10" column="40" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,10 +87,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/wanho/Test/MybatisTest2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+            <state relative-caret-position="154">
+              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/wanho/pojo/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/net/wanho/mapper/PersonMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/wanho/mapper/UserMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/wanho/pojo/Address.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -104,14 +156,20 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/net/wanho/pojo/User.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/net/wanho/util/MybatisUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/wanho/mapper/TestMybatis.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/net/wanho/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/net/wanho/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/net/wanho/Test/MybatisTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/net/wanho/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/net/wanho/pojo/Card.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/net/wanho/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/net/wanho/pojo/Address.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/wanho/pojo/Person.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/wanho/Test/MybatisTest2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/wanho/mapper/PersonMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/net/wanho/mapper/PersonMapper.xml" />
       </list>
     </option>
   </component>
@@ -335,8 +393,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MybatisTest.updateUserSet">
-    <configuration name="MybatisTest.selectUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MybatisTest2.select2">
+    <configuration name="MybatisTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mybatis" />
       <extension name="coverage">
         <pattern>
@@ -345,14 +403,45 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="net.wanho.Test" />
-      <option name="MAIN_CLASS_NAME" value="net.wanho.Test.MybatisTest" />
-      <option name="METHOD_NAME" value="selectUser" />
+      <option name="MAIN_CLASS_NAME" value="net.wanho.Test.MybatisTest2" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisTest2.select" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.wanho.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.wanho.Test" />
+      <option name="MAIN_CLASS_NAME" value="net.wanho.Test.MybatisTest2" />
+      <option name="METHOD_NAME" value="select" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisTest.selectUserByTrim" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MybatisTest2.select2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.wanho.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.wanho.Test" />
+      <option name="MAIN_CLASS_NAME" value="net.wanho.Test.MybatisTest2" />
+      <option name="METHOD_NAME" value="select2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisTest.selectUserByIds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mybatis" />
       <extension name="coverage">
         <pattern>
@@ -362,7 +451,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="net.wanho.Test" />
       <option name="MAIN_CLASS_NAME" value="net.wanho.Test.MybatisTest" />
-      <option name="METHOD_NAME" value="selectUserByTrim" />
+      <option name="METHOD_NAME" value="selectUserByIds" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -384,45 +473,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisTest.selectUserBychoose" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mybatis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.wanho.Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="net.wanho.Test" />
-      <option name="MAIN_CLASS_NAME" value="net.wanho.Test.MybatisTest" />
-      <option name="METHOD_NAME" value="selectUserBychoose" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MybatisTest.updateUserSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mybatis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.wanho.Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="net.wanho.Test" />
-      <option name="MAIN_CLASS_NAME" value="net.wanho.Test.MybatisTest" />
-      <option name="METHOD_NAME" value="updateUserSet" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MybatisTest.updateUserSet" />
-        <item itemvalue="JUnit.MybatisTest.selectUserByTrim" />
+        <item itemvalue="JUnit.MybatisTest2.select2" />
+        <item itemvalue="JUnit.MybatisTest2.select" />
+        <item itemvalue="JUnit.MybatisTest2" />
+        <item itemvalue="JUnit.MybatisTest.selectUserByIds" />
         <item itemvalue="JUnit.MybatisTest.selectUserByWhere" />
-        <item itemvalue="JUnit.MybatisTest.selectUserBychoose" />
-        <item itemvalue="JUnit.MybatisTest.selectUser" />
       </list>
     </recent_temporary>
   </component>
@@ -440,7 +497,7 @@
       <workItem from="1559701835261" duration="3106000" />
       <workItem from="1559705117307" duration="638000" />
       <workItem from="1559705790086" duration="18163000" />
-      <workItem from="1559785113838" duration="2905000" />
+      <workItem from="1559785113838" duration="12118000" />
     </task>
     <task id="LOCAL-00001" summary="mybatis learn code">
       <created>1559725273363</created>
@@ -456,49 +513,56 @@
       <option name="project" value="LOCAL" />
       <updated>1559725534966</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="mybatis learn code">
+      <created>1559789589143</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559789589143</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MybatisTest_selectUserByWhere - 2019.06.06 at 10h 28m 14s.xml">
-      <configuration name="MybatisTest.selectUserByWhere" configurationId="JUnit" />
+    <history-entry file="MybatisTest2_select2 - 2019.06.06 at 15h 14m 51s.xml">
+      <configuration name="MybatisTest2.select2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest_selectUserByWhere - 2019.06.06 at 10h 28m 21s.xml">
-      <configuration name="MybatisTest.selectUserByWhere" configurationId="JUnit" />
+    <history-entry file="MybatisTest2_select2 - 2019.06.06 at 15h 15m 59s.xml">
+      <configuration name="MybatisTest2.select2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest_selectUserByWhere - 2019.06.06 at 10h 28m 27s.xml">
-      <configuration name="MybatisTest.selectUserByWhere" configurationId="JUnit" />
+    <history-entry file="MybatisTest2_select2 - 2019.06.06 at 15h 16m 49s.xml">
+      <configuration name="MybatisTest2.select2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest_selectUserByTrim - 2019.06.06 at 10h 29m 48s.xml">
-      <configuration name="MybatisTest.selectUserByTrim" configurationId="JUnit" />
+    <history-entry file="MybatisTest2_select2 - 2019.06.06 at 15h 18m 03s.xml">
+      <configuration name="MybatisTest2.select2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest_selectUserByTrim - 2019.06.06 at 10h 29m 54s.xml">
-      <configuration name="MybatisTest.selectUserByTrim" configurationId="JUnit" />
+    <history-entry file="MybatisTest2_select2 - 2019.06.06 at 15h 18m 33s.xml">
+      <configuration name="MybatisTest2.select2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest_selectUserByTrim - 2019.06.06 at 10h 30m 02s.xml">
-      <configuration name="MybatisTest.selectUserByTrim" configurationId="JUnit" />
+    <history-entry file="MybatisTest2_select2 - 2019.06.06 at 15h 18m 55s.xml">
+      <configuration name="MybatisTest2.select2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest_updateUserSet - 2019.06.06 at 10h 49m 36s.xml">
-      <configuration name="MybatisTest.updateUserSet" configurationId="JUnit" />
+    <history-entry file="MybatisTest2_select2 - 2019.06.06 at 15h 34m 26s.xml">
+      <configuration name="MybatisTest2.select2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest_updateUserSet - 2019.06.06 at 10h 50m 04s.xml">
-      <configuration name="MybatisTest.updateUserSet" configurationId="JUnit" />
+    <history-entry file="MybatisTest2_select2 - 2019.06.06 at 15h 34m 39s.xml">
+      <configuration name="MybatisTest2.select2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest_updateUserSet - 2019.06.06 at 10h 50m 59s.xml">
-      <configuration name="MybatisTest.updateUserSet" configurationId="JUnit" />
+    <history-entry file="MybatisTest2_select2 - 2019.06.06 at 15h 36m 34s.xml">
+      <configuration name="MybatisTest2.select2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest_updateUserSet - 2019.06.06 at 10h 51m 28s.xml">
-      <configuration name="MybatisTest.updateUserSet" configurationId="JUnit" />
+    <history-entry file="MybatisTest2_select2 - 2019.06.06 at 15h 36m 57s.xml">
+      <configuration name="MybatisTest2.select2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25737000" />
+    <option name="totallyTimeSpent" value="34950000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23240939" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23240939" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -507,9 +571,9 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3585746" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.29477197" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32962137" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29398665" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.29398665" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -561,16 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/wanho/mapper/TestMybatis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.20/lombok-1.16.20.jar!/lombok/ConfigurationKeys.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-464">
@@ -611,20 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -632,10 +672,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/wanho/util/MybatisUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        <state relative-caret-position="111">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/wanho/pojo/Card.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/wanho/mapper/TestMybatis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/wanho/Test/MybatisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="200" column="7" selection-start-line="200" selection-start-column="7" selection-end-line="201" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -644,8 +715,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/wanho/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        <state relative-caret-position="303">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/wanho/pojo/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/wanho/pojo/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -654,25 +742,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/net/wanho/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="116" column="22" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="22" />
+        <state relative-caret-position="222">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/wanho/Test/MybatisTest2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/wanho/Test/MybatisTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="197" column="29" selection-start-line="197" selection-start-column="29" selection-end-line="197" selection-end-column="29" />
+        <state relative-caret-position="154">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/wanho/util/MybatisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/wanho/mapper/PersonMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/net/wanho/mapper/PersonMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
         </state>
       </provider>
     </entry>

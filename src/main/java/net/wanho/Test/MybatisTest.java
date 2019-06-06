@@ -1,16 +1,12 @@
 package net.wanho.Test;
 
-import net.wanho.mapper.TestMybatis;
 import net.wanho.mapper.UserMapper;
 import net.wanho.pojo.User;
 import net.wanho.util.MybatisUtil;
 import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-import org.junit.Before;
 import org.junit.Test;
 
-import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 public class MybatisTest {
@@ -197,6 +193,37 @@ public class MybatisTest {
         user.setUsername("wwy");
         user.setPassword("123");
         System.out.println(userMapper.updateUserSet(user));
+        MybatisUtil.closeAndCommit();
+    }
+
+    @Test
+    public void selectUserByIds(){
+        SqlSession sqlSession= MybatisUtil.getSqlSession();
+        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+        User user=new User();
+        user.setUsername("wwy");
+//        user.setPassword("wwy123");
+        List<Integer> list=new ArrayList<>();
+        list.add(1);
+        list.add(155);
+        list.add(156);
+        System.out.println(userMapper.selectUserByIds(list));
+        MybatisUtil.closeAndCommit();
+    }
+
+    @Test
+    public void insertUsers(){
+        SqlSession sqlSession= MybatisUtil.getSqlSession();
+        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+        User user1=new User();
+        user1.setUsername("wwy");
+        user1.setPassword("123");
+        user1.setSex("1");
+        user1.setPosition("1");
+        List<User> list=new ArrayList<>();
+        list.add(user1);
+        list.add(new User());
+        System.out.println(userMapper.insertUsers(list));
         MybatisUtil.closeAndCommit();
     }
 }

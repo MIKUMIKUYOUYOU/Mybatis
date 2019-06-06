@@ -5,10 +5,17 @@
 <configuration>
     <!--    数据库配置-->
     <properties resource="db.properties"/>
+
+    <settings>
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+
     <!--类型别名-->
     <typeAliases>
         <package name="net.wanho.pojo"/>
     </typeAliases>
+
     <!--配置数据库环境-->
     <environments default="development">
         <environment id="development">
@@ -24,5 +31,7 @@
     <!--接口映射文件-->
     <mappers>
         <mapper resource="net/wanho/mapper/UserMapper.xml"/>
+        <mapper resource="net/wanho/mapper/PersonMapper.xml"/>
+<!--        <package name="net.wanho.mapper"/>-->
     </mappers>
 </configuration>

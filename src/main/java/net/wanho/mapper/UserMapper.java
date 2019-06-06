@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
+import java.util.Map;
 
 public interface UserMapper {
     void addUser(User user);
@@ -23,4 +24,7 @@ public interface UserMapper {
     List<User> selectUserByWhere(User user);
     List<User> selectUserByTrim(User user);
     Integer updateUserSet(User user);
+    List<User> selectUserByIds(List<Integer> ids);
+    Integer insertUsers(List<User> users);
+
 }

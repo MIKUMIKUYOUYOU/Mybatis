@@ -2,9 +2,12 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
 <!--命名空间指向对应的接口-->
 <mapper namespace="net.wanho.mapper.UserMapper">
-
+    <sql id="SELECT_USER_SQL">
+        id,username,password,sex,position
+    </sql>
     <insert id="addUser">
         INSERT INTO user(username,password,sex,position) VALUES(#{username},#{password},#{sex},#{position})
     </insert>
@@ -21,11 +24,11 @@
         <result column="sex" property="sex"/>
     </resultMap>
     <select id="selectAll" resultMap="userMap">
-        SELECT * FROM user
+        SELECT <include refid="SELECT_USER_SQL"/> FROM user
     </select>
 
     <select id="selectUserById" resultType="User">
-        SELECT * FROM user WHERE id=#{id}
+        SELECT <include refid="SELECT_USER_SQL"/> FROM user WHERE id=#{id}
     </select>
 
     <!--    普通类型-->
@@ -33,7 +36,7 @@
     <!--   需要传 （%数据%） SELECT * FROM user WHERE username LIKE #{name}-->
     <!--   正常传数据 SELECT * FROM user WHERE username LIKE CONCAT("%",#{name},"%")-->
     <select id="selectUserByName" resultType="User">
-        SELECT * FROM user WHERE username LIKE CONCAT("%",#{name},"%")
+        SELECT <include refid="SELECT_USER_SQL"/> FROM user WHERE username LIKE CONCAT("%",#{name},"%")
     </select>
 
     <!--    复杂类型-->
@@ -41,7 +44,7 @@
     <!--  需要传 （%数据%）  SELECT * FROM user WHERE username LIKE #{username}-->
     <!--  正常传数据  SELECT * FROM user WHERE username LIKE CONCAT("%",#{name},"%")-->
     <select id="selectUserByName2" resultType="User">
-        SELECT * FROM user WHERE username LIKE CONCAT("%",#{username},"%")
+        SELECT <include refid="SELECT_USER_SQL"/> FROM user WHERE username LIKE CONCAT("%",#{username},"%")
     </select>
 
     <insert id="addUser2" useGeneratedKeys="true" keyProperty="id">
@@ -55,6 +58,83 @@
     <update id="updateUser2">
         UPDATE user SET username=#{user.username},password=#{user.password},sex=#{user.sex},position=#{user.position} WHERE id=#{id}
     </update>
+    <select id="selectUser" resultType="net.wanho.pojo.User">
+        SELECT <include refid="SELECT_USER_SQL"/> FROM user WHERE 1=1
+        <if test="username!=null">
+            AND username=#{username}
+        </if>
+        <if test="password != null">
+            AND password=#{password}
+        </if>
+    </select>
+    <select id="selectUserBychoose" resultType="net.wanho.pojo.User">
+        SELECT <include refid="SELECT_USER_SQL"/> FROM user WHERE 1=1
+        <choose>
+            <when test="username != null">
+                AND username=#{username}
+            </when>
+            <when test="password != null">
+                AND password=#{password}
+            </when>
+            <otherwise>
+                AND sex=1;
+            </otherwise>
+        </choose>
+    </select>
+    <select id="selectUserByWhere" resultType="net.wanho.pojo.User">
+        SELECT <include refid="SELECT_USER_SQL"/> FROM user
+        <where>
+            <if test="username!=null">
+                AND username=#{username}
+            </if>
+            <if test="password != null">
+                AND password=#{password}
+            </if>
+        </where>
+    </select>
+
+    <select id="selectUserByTrim" resultType="net.wanho.pojo.User">
+        SELECT * FROM user
+        <trim prefix="WHERE" prefixOverrides="and|or">
+
+            <if test="username!=null">
+                AND username=#{username}
+            </if>
+            <if test="password != null">
+                AND password=#{password}
+            </if>
+        </trim>
+
+    </select>
+    <update id="updateUserSet">
+        UPDATE user
+        <set>
+            <if test="username!=null">
+                username=#{username},
+            </if>
+            <if test="password != null">
+                password=#{password},
+            </if>
+        </set>
+        WHERE id=#{id}
+    </update>
+    <select id="selectUserByIds" resultType="net.wanho.pojo.User">
+        SELECT * FROM user
+        <if test="list != null">
+            WHERE id IN
+            <foreach collection="list" index="index" item="item" open="(" close=")" separator=",">
+                #{item}
+            </foreach>
+        </if>
+    </select>
+    <insert id="insertUsers">
+        INSERT INTO user(username,password,sex,position) VALUES
+        <if test="list != null">
+            <foreach collection="list" separator="," item="item" index="index">
+                (#{item.username},#{item.password},#{item.sex},#{item.position})
+            </foreach>
+        </if>
+    </insert>
 
 
 </mapper>
