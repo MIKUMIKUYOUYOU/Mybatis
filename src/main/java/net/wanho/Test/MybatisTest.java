@@ -143,4 +143,60 @@ public class MybatisTest {
         System.out.println(users);
         MybatisUtil.closeAndCommit();
     }
+
+    @Test
+    public void selectUser(){
+        SqlSession sqlSession= MybatisUtil.getSqlSession();
+        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+        User user=new User();
+        user.setUsername("wwy");
+        user.setPassword("wwy123");
+        System.out.println(userMapper.selectUser(user));
+        MybatisUtil.closeAndCommit();
+    }
+
+    @Test
+    public void selectUserBychoose(){
+        SqlSession sqlSession= MybatisUtil.getSqlSession();
+        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+        User user=new User();
+        user.setUsername("hahaha");
+        user.setPassword("wwy123");
+        System.out.println(userMapper.selectUserBychoose(user));
+        MybatisUtil.closeAndCommit();
+    }
+
+    @Test
+    public void selectUserByWhere(){
+        SqlSession sqlSession= MybatisUtil.getSqlSession();
+        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+        User user=new User();
+//        user.setUsername("wwy");
+        user.setPassword("wwy123");
+        System.out.println(userMapper.selectUserByWhere(user));
+        MybatisUtil.closeAndCommit();
+    }
+
+    @Test
+    public void selectUserByTrim(){
+        SqlSession sqlSession= MybatisUtil.getSqlSession();
+        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+        User user=new User();
+        user.setUsername("wwy");
+//        user.setPassword("wwy123");
+        System.out.println(userMapper.selectUserByTrim(user));
+        MybatisUtil.closeAndCommit();
+    }
+
+    @Test
+    public void updateUserSet(){
+        SqlSession sqlSession= MybatisUtil.getSqlSession();
+        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+        User user=new User();
+        user.setId(1);
+        user.setUsername("wwy");
+        user.setPassword("123");
+        System.out.println(userMapper.updateUserSet(user));
+        MybatisUtil.closeAndCommit();
+    }
 }
